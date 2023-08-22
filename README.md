@@ -1,33 +1,4 @@
-nour@nour-virtual-machine:~$ sudo su 
-[sudo] password for nour: 
-root@nour-virtual-machine:/home/nour# kubectl get nodes 
-E0808 05:03:26.667059    3048 memcache.go:265] couldn't get current server API group list: Get "https://10.2.1.31:8443/api?timeout=32s": dial tcp 10.2.1.31:8443: connect: connection refused
-E0808 05:03:26.667810    3048 memcache.go:265] couldn't get current server API group list: Get "https://10.2.1.31:8443/api?timeout=32s": dial tcp 10.2.1.31:8443: connect: connection refused
-E0808 05:03:26.669548    3048 memcache.go:265] couldn't get current server API group list: Get "https://10.2.1.31:8443/api?timeout=32s": dial tcp 10.2.1.31:8443: connect: connection refused
-E0808 05:03:26.671333    3048 memcache.go:265] couldn't get current server API group list: Get "https://10.2.1.31:8443/api?timeout=32s": dial tcp 10.2.1.31:8443: connect: connection refused
-E0808 05:03:26.673113    3048 memcache.go:265] couldn't get current server API group list: Get "https://10.2.1.31:8443/api?timeout=32s": dial tcp 10.2.1.31:8443: connect: connection refused
-The connection to the server 10.2.1.31:8443 was refused - did you specify the right host or port?
-root@nour-virtual-machine:/home/nour# minikube start --driver=docker 
-😄  minikube v1.19.0 on Ubuntu 20.04
-❗  Deleting existing cluster minikube with different driver none due to --delete-on-failure flag set by the user. 
 
-💢  Exiting due to GUEST_DRIVER_MISMATCH: The existing "minikube" cluster was created using the "none" driver, which is incompatible with requested "docker" driver.
-💡  Suggestion: Delete the existing 'minikube' cluster using: 'minikube delete', or start the existing 'minikube' cluster using: 'minikube start --driver=none'
-
-root@nour-virtual-machine:/home/nour# docker images 
-REPOSITORY                                TAG        IMAGE ID       CREATED         SIZE
-nourelhouda/ic-webapp                     v1.0       8327cef1eb6b   6 days ago      52.4MB
-odoo                                      latest     ee2490ffb478   11 days ago     1.68GB
-dpage/pgadmin4                            latest     9b6573409f3b   2 weeks ago     530MB
-postgres                                  10         1cad456b3a24   13 months ago   202MB
-gcr.io/k8s-minikube/storage-provisioner   v5         6e38f40d628d   2 years ago     31.5MB
-k8s.gcr.io/kube-proxy                     v1.20.2    43154ddb57a8   2 years ago     118MB
-k8s.gcr.io/kube-controller-manager        v1.20.2    a27166429d98   2 years ago     116MB
-k8s.gcr.io/kube-apiserver                 v1.20.2    a8c2fdb8bf76   2 years ago     122MB
-k8s.gcr.io/kube-scheduler                 v1.20.2    ed2c44fbdd78   2 years ago     46.4MB
-k8s.gcr.io/etcd                           3.4.13-0   0369cf4303ff   2 years ago     253MB
-k8s.gcr.io/coredns                        1.7.0      bfe3a36ebd25   3 years ago     45.2MB
-k8s.gcr.io/pause                          3.2        80d28bedfe5d   3 years ago     683kB
 root@nour-virtual-machine:/home/nour# history
     1  sudo apt-get update 
     2  sudo reboot
