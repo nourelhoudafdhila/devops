@@ -46,19 +46,19 @@ root@nour-virtual-machine:/home/nour# history
    44  sudo snap install kubectl --classic
    45  kubectl version --client
    46  kubectl get nodes
-   47  git clone -b application  https://github.com/nourelhoudafdhila/cloudtemple.git applic
+   47  git clone -b cicd  https://github.com/nourelhoudafdhila/cloudtemple.git devops
    48  ls
    49  docker images
-   50  cd .. applic/
+   50  cd .. devops/
    51  ls
-   52  cd applic
+   52  cd devops
    53  ls
    54  cd app
    55  ls
    56  nano Dockerfile_v1.0
-   57  docker build -f ./Dockerfile_v1.0 -t nourelhouda/ic-webapp:v1.0 .
+   57  docker build -f ./Dockerfile_v1.0 -t nourfdhila123/ic-webapp:v1.0 .
    58  docker images 
-   59  docker run -d --name ic-webapp-test -p 8000:8080 nourelhouda/ic-webapp:v1.0
+   59  docker run -d --name ic-webapp-test -p 8000:8080 nourfdhila123/ic-webapp:v1.0
    60  docker images 
    61  ls
    62  cd ..
